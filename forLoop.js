@@ -46,3 +46,25 @@ total = 1;
 for (index = 0; index < numbers.length; index += 1 ){
 	total = total * numbers[index];
 }
+
+
+// vowel Replacer
+
+
+var userInput = "This is our sample sentence, containing vowels.";
+
+var vowelReplace = function(inputString) {
+	var vowels = ['a', 'e', 'i', 'o', 'u'];
+	var output = [];
+  for (strIndex = 0; strIndex < inputString.length; strIndex += 1) {
+    if (vowels.includes(inputString[strIndex])) {
+      output.push('-');
+    } else {
+    output.push(inputString[strIndex]);
+    }
+  };
+  var outputString = output.join('');
+  console.log(outputString);
+};
+
+vowelReplace(userInput);
